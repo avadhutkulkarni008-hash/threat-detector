@@ -4,11 +4,11 @@ A lightweight Python CLI tool that integrates with the **VirusTotal API (v3)** t
 
 ---
 
-## 🛠️ Complete Setup & Installation
+## 🛠️ Complete Setup & Execution
 
 ### Option A: Setup on Linux / Kali Linux
 
-Open your terminal and run the following commands line-by-line:
+Open your terminal and run the following commands:
 
 ```bash
 # 1. Clone the repository
@@ -28,3 +28,6 @@ pip install -r requirements.txt
 
 # 6. Create the .env file with your VirusTotal API key
 echo "VT_API_KEY=your_virustotal_api_key_here" > .env
+
+# 7. Run the Threat Detector
+python3 app.py
