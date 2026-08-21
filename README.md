@@ -1,18 +1,30 @@
 # Threat Detector (Phishing URL & Malware Hash Scanner)
 
-A lightweight Python CLI application that interacts with the **VirusTotal API (v3)** to analyze suspicious file hashes and URLs for potential malicious threats.
-
-## 🚀 Features
-
-* **File Hash Analysis:** Look up existing MD5 or SHA-256 file hashes against VirusTotal's threat database.
-* **URL Analysis:** Check indexed URLs or automatically submit unseen URLs for live threat scanning.
-* **Automated Logging:** Saves all scan results directly into `scan_reports.txt` for record-keeping.
+A lightweight Python CLI tool that integrates with the **VirusTotal API (v3)** to scan file hashes (MD5/SHA-256) and URLs for malicious threats, automatically saving scan logs locally.
 
 ---
 
-## 🛠️ Prerequisites & Setup
+## 🛠️ Complete Setup & Installation
 
-### 1. Clone the Repository
+### Option A: Setup on Linux / Kali Linux
+
+Open your terminal and run the following commands line-by-line:
+
 ```bash
+# 1. Clone the repository
 git clone [https://github.com/avadhutkulkarni008-hash/threat-detector.git](https://github.com/avadhutkulkarni008-hash/threat-detector.git)
+
+# 2. Navigate into the project folder
 cd threat-detector
+
+# 3. Create a Python virtual environment
+python3 -m venv venv
+
+# 4. Activate the virtual environment
+source venv/bin/activate
+
+# 5. Install required dependencies
+pip install -r requirements.txt
+
+# 6. Create the .env file with your VirusTotal API key
+echo "VT_API_KEY=your_virustotal_api_key_here" > .env
